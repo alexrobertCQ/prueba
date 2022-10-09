@@ -28,7 +28,7 @@ function pedirComida(array) {
     vegan : vege ,
     standard : normal
   }
-  return menus ;
+  return menus ; //menus completos
 }
 
 // No modifiques nada debajo de esta linea //
