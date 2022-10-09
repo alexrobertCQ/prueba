@@ -9,7 +9,10 @@ function doble(array) {
   // ej:
   //doble([1, 2, 3]) devuelve [2, 4, 6]
   // Tu código aca:
-
+  var xdos = array.map(function(x) {
+    return x*2 ;
+  }) ;
+  return xdos ;
 }
 
 // No modifiques nada debajo de esta linea //

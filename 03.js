@@ -12,8 +12,19 @@ function fakeBinary2(string) {
   // fakeBinary2('5627') devuelve "1101"
   // fakeBinary("729") devuelve "101"
   // Tu código aca:
-
+  let newstr = "";
+  for (var i = 0 ; i < string.length ; i++ ) {
+    if ( string [i] < 5 ) {
+      newstr = newstr + "0" ;
+    }  else {
+      if ( string [i] >= 0) {
+      newstr = newstr + "1" ;
+      }
+    }
+  }
+  return newstr ;
 }
+
 
 // No modifiques nada debajo de esta linea //
 

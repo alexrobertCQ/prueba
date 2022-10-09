@@ -25,8 +25,15 @@ function cuantosMenores(invitados) {
   // };
   // cuantosMenores(invitados) devuelve 2
   // Tu código aca:
-
+  let cantidadDeInvitadosMenores = 0;
+  for ( let prop in invitados ) {
+    if ( invitados [prop].edad < 18 ) {
+    cantidadDeInvitadosMenores++ ;
+    }
+  }
+  return cantidadDeInvitadosMenores ;
 }
+
 
 
 // No modifiques nada debajo de esta linea //

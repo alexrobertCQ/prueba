@@ -1,3 +1,5 @@
+const { getVersion } = require("jest");
+
 /* 
   Importante: 
   No modificar ni el nombre ni los argumetos que reciben las funciones, sólo deben escribir
@@ -12,7 +14,21 @@ function pedirComida(array) {
   // pedirComida([{nombre: "Harry", dieta: "standard"}, {nombre: "Luna", dieta: 'vegan'}, {nombre: "Goyle", dieta: "standard"}])
   // retorna {standard: 2, vegan: 1}
   // Tu código aca:
-
+  let vege = 0;
+  let normal = 0;
+  for ( let prop in array ) {
+    if ( array [prop].dieta === "vegan" ) {
+    vege++;
+    }
+    if ( array [prop].dieta === "standard" ) {
+      normal++;
+    }
+  }
+  const menus = {
+    vegan : vege ,
+    standard : normal
+  }
+  return menus ;
 }
 
 // No modifiques nada debajo de esta linea //
